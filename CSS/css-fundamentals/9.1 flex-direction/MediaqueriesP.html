@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    height: 80px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0 40px;
+}
+
+.logo img {
+    height: 60px;
+    border-radius: 10px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    background-color: yellow;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bimg {
+    display: flex;
+    background-image: url(../main.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(12, 0, 0, 0.824);
+    text-align: center;
+}
+
+.para {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Partners */
+
+.partners {
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.partners > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 220px;
+    text-align: center;
+}
+
+.lam img,
+.mercedes img,
+.wols img {
+    height: 170px;
+    width: auto;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.lpara,
+.mercedespara,
+.wolspara {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+/* ==========================
+   Tablet
+   ========================== */
+
+@media (max-width: 992px) {
+
+    .nav {
+        gap: 20px;
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .partners {
+        flex-wrap: wrap;
+    }
+}
+
+/* ==========================
+   Mobile
+   ========================== */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .bimg {
+        height: auto;
+        min-height: 350px;
+        padding: 30px 15px;
+    }
+
+    .header {
+        font-size: 26px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .partners {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .partners > div {
+        width: 90%;
+        flex: none;
+    }
+
+    .lam img,
+    .mercedes img,
+    .wols img {
+        height: 140px;
+    }
+}
+
+/* ==========================
+   Small Phones
+   ========================== */
+
+@media (max-width: 480px) {
+
+    .header {
+        font-size: 22px;
+    }
+
+    .para {
+        font-size: 13px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lam img,
+    .mercedes img,
+    .wols img {
+        height: 120px;
+    }
+}
+    </style>
+</head>
+<body>
+<div class="logo">
+            <img src="../12.PNG.jfif" alt="">
+
+        </div>
+        <div class="hnav">
+            <ul class="nav">
+                <li><a href="">Home </a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+    <div class="bimg">
+        <div class="header">
+            Welcome to Our Plateform
+        </div>
+        <div class="para">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repellendus quas unde nesciunt totam eaque
+            voluptates accusantium atque.<br> Odio repellendus necessitatibus commodi provident quisquam! <br> neque est
+            enim iste laborum ducimus?
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<div class="partners">
+    
+    <div class="lam">
+        <img src="../Logos/photo-1620288627223-53302f4e8c74.avif" alt="">
+        <div class="lpara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+        </div>
+    </div>
+
+    <div class="mercedes">
+        <img src="../Logos/photo-1563694983011-6f4d90358083.avif" alt="">
+         <div class="mercedespara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+        </div>
+    </div>
+ <div  class="wols">
+        <img src="../Logos/photo-1619679505795-a4d0e6be5e02.avif" alt="">
+        <div class="wolspara">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    
+</body>
+</html>

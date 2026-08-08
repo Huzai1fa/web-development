@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 80px;
+            width: 100%;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            background-color: whitesmoke;
+        }
+      
+
+        img {
+            height: 60px;
+            border-radius: 10px;
+            margin-left: 100px;
+
+        }
+
+        .nav {
+            display: flex;
+            list-style-type: none;
+            gap: 40px;
+            padding-right: 350px;
+            font-weight: 700;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+        }
+       
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li a:hover {
+            background-color: yellow;
+        }
+
+   .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   }
+
+
+        .bimg {
+            display: flex;
+            background-image: url(../main.jpg);
+            height: 400px;
+            width: 100%;
+            background-size: cover;
+            opacity: 0.8;
+            justify-content: center;
+            align-items:  center ;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .header {
+            font-size: 40px;
+            font-weight: 900;
+            /* margin-top: 40px; */
+            margin-left: 100px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgba(12, 0, 0, 0.824);
+        }
+     .para{
+         margin-left: 150px;
+         margin-bottom: 110px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+
+       /* Partners */
+     .partners{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+     }
+    
+     .partners >div{
+         display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+         text-align: center;
+          
+    height: 250px;
+    flex: 0 0 170px;
+
+     }
+/* gap: 10px; */
+ /* background-color: blue; */
+
+
+
+
+     /* .lam{
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     } */
+     .lam img{
+        height: 170px;
+        margin-top: 8px;  
+     }
+     .mercedes img{
+         height: 170px;
+        margin-top: 8px;
+     }
+    .wols img{
+        height: 170px;
+        margin-top: 8px;  
+    }
+
+    .lpara,
+    .mercedespara,
+    .wolspara{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: stretch;
+        justify-content: center;
+        font-size: 13px;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../12.PNG.jfif" alt="">
+
+        </div>
+        <div class="hnav">
+            <ul class="nav">
+                <li><a href="">Home </a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="hero">
+    <div class="bimg">
+        <div class="header">
+            Welcome to Our Plateform
+        </div>
+        <div class="para">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Repellendus quas unde nesciunt totam eaque
+            voluptates accusantium atque.<br> Odio repellendus necessitatibus commodi provident quisquam! <br> neque est
+            enim iste laborum ducimus?
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+<div class="partners">
+    
+    <div class="lam">
+        <img src="../Logos/photo-1620288627223-53302f4e8c74.avif" alt="">
+        <div class="lpara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+        </div>
+    </div>
+
+    <div class="mercedes">
+        <img src="../Logos/photo-1563694983011-6f4d90358083.avif" alt="">
+         <div class="mercedespara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+        </div>
+    </div>
+ <div  class="wols">
+        <img src="../Logos/photo-1619679505795-a4d0e6be5e02.avif" alt="">
+        <div class="wolspara">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, nam.
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+
+</html>
