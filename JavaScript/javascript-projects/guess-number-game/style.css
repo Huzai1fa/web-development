@@ -1,0 +1,386 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 15px;
+
+  background:
+    radial-gradient(circle at 10% 10%, #1e3a5f, transparent 35%),
+    radial-gradient(circle at 90% 90%, #164e63, transparent 35%),
+    linear-gradient(135deg, #070b12, #111827);
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   GAME CARD
+========================= */
+
+#wrapper {
+  width: 450px;
+  max-width: 100%;
+
+  height: 100%;
+  max-height: 650px;
+
+  background: rgba(25, 30, 42, 0.95);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.55),
+    0 0 40px rgba(0, 200, 255, 0.08);
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+h1 {
+  background: linear-gradient(
+    135deg,
+    #111827,
+    #1f2937
+  );
+
+  color: white;
+
+  padding: 25px 10px;
+
+  font-size: 30px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+  margin-top: 14px;
+
+  color: #cbd5e1;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Guess label */
+
+#guess {
+  display: block;
+
+  margin-top: 32px;
+
+  color: #ffffff;
+
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+#guessField {
+  width: 250px;
+  max-width: 85%;
+
+  height: 55px;
+
+  margin-top: 18px;
+
+  background: #f8fafc;
+
+  color: #111827;
+
+  border: 3px solid #475569;
+
+  border-radius: 13px;
+
+  font-size: 28px;
+  font-weight: bold;
+
+  text-align: center;
+
+  outline: none;
+
+  transition: 0.25s ease;
+}
+
+#guessField:focus {
+  border-color: #22d3ee;
+
+  box-shadow:
+    0 0 0 4px rgba(34,211,238,0.12),
+    0 0 20px rgba(34,211,238,0.25);
+
+  transform: scale(1.02);
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+#subt {
+  width: 210px;
+  max-width: 80%;
+
+  height: 50px;
+
+  margin-top: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  );
+
+  color: white;
+
+  border: none;
+  border-radius: 13px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+
+  box-shadow:
+    0 8px 20px rgba(37,99,235,0.3);
+}
+
+#subt:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(37,99,235,0.45);
+}
+
+
+/* =========================
+   RESULTS
+========================= */
+
+.resultParas {
+  margin: 28px 20px 20px;
+
+  padding: 17px;
+
+  background: rgba(15,23,42,0.75);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 15px;
+}
+
+.resultParas p {
+  margin-top: 9px;
+
+  font-size: 15px;
+}
+
+
+/* Previous guesses */
+
+.guesses {
+  display: inline-block;
+
+  min-width: 70px;
+
+  padding: 5px 9px;
+
+  background: #334155;
+
+  color: white;
+
+  border-radius: 7px;
+
+  font-weight: bold;
+}
+
+
+/* Remaining guesses */
+
+.lastResult {
+  display: inline-block;
+
+  min-width: 35px;
+
+  padding: 5px 9px;
+
+  background: #334155;
+
+  color: white;
+
+  border-radius: 7px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   GAME MESSAGE
+========================= */
+
+.lowOrHigh {
+  min-height: 40px;
+
+  margin-top: 15px !important;
+}
+
+.lowOrHigh h2 {
+  color: #22d3ee;
+
+  font-size: 19px;
+
+  animation: fadeIn 0.3s ease;
+}
+
+
+/* =========================
+   NEW GAME
+========================= */
+
+.button {
+  margin-top: 15px;
+}
+
+.button h2 {
+  display: inline-block;
+
+  padding: 11px 22px;
+
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #2563eb
+  );
+
+  color: white;
+
+  border-radius: 11px;
+
+  font-size: 17px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.button h2:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(37,99,235,0.4);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================
+   SMALL SCREENS
+========================= */
+
+@media (max-width: 500px) {
+
+  body {
+    padding: 8px;
+  }
+
+  #wrapper {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+    padding: 21px 8px;
+  }
+
+  #guess {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  #guessField {
+    width: 80%;
+  }
+
+  #subt {
+    width: 75%;
+  }
+
+  .resultParas {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 14px;
+  }
+}
+
