@@ -53,7 +53,6 @@ localStorage.setItem("task",JSON.stringify(arr));
   renderTasks();
 
 })
-
 //Edit
 const edit=document.createElement("button")
 edit.textContent="Edit";
